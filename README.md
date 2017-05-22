@@ -35,8 +35,11 @@ swipeFlip.swipeFlip(layer, perspective, drag, animOptions)
 ## Meanings of parameters
 Make sure to plan ahead what you need to show in your prototype. My workflow is:
 The swipeFlip function has 4 parameters, they are all necessary
--  **layer: ** The layer you want to creat flip effect.
--  **perspective: ** see [docs for reference](http://framerjs.com/docs/#layer.perspective)
--  **drag: ** This parameter is about sensitivity, Recommended range is from 0.5 to 1.5. You can try finding a fitted value.
--  **animOptions: ** This parameter manage how the layer will be animated when you loosen your finger.
+- **layer:** The layer you want to creat flip effect.
+
+- **perspective:** see [docs for reference](http://framerjs.com/docs/#layer.perspective)
+
+- **drag:** This parameter is about sensitivity, Recommended range is from 0.5 to 1.5. You can try finding a fitted value.
+
+- **animOptions:** This parameter manage how the layer will be animated when you loosen your finger.
 
