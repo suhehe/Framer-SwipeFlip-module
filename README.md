@@ -39,7 +39,10 @@ The swipeFlip function has 4 parameters, they are all necessary
 
 - **perspective:** see [docs for reference](http://framerjs.com/docs/#layer.perspective)
 
-- **drag:** This parameter is about sensitivity, Recommended range is from 0.5 to 1.5. You can try finding a fitted value.
+- **drag:** This parameter is about sensitivity, recommended range is from 0.5 to 1.5. You can try finding a fitted value.
 
 - **animOptions:** This parameter manage how the layer will be animated when you loosen your finger.
+
+## References
+This module is refer to [framer-flip-card-module](https://github.com/aboutjax/framer-flip-card-module) by aboutjax.
 
