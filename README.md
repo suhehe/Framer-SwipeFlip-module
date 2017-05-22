@@ -1,5 +1,5 @@
 # Framer-SwipeFlip-module
-A Framer module to create flip effect listen in the swipe event
+A Framer module to create flip effect by listening in the swipe event
 
 
 ## How to use
