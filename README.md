@@ -1,8 +1,10 @@
 # Framer-SwipeFlip-module
+
 A Framer module to create flip effect by listening in the swipe event
 
 
 ## How to use
+
 1 - Download swipeFlip.coffee and put it in your modules folder.
 
 2 - Import the module.
@@ -10,7 +12,7 @@ A Framer module to create flip effect by listening in the swipe event
 swipeFlip = require "swipeFlip"
 ```
 
-2 - Create a new Layer.
+3 - Create a new Layer.
 ```coffeescript
 layer = new Layer
   width: 400
@@ -20,7 +22,7 @@ layer = new Layer
   backgroundColor: "none"
 ```
 
-3 - Call the swipeFlip function and set the parameters.
+4 - Call the swipeFlip function and set the parameters.
 ```coffeescript
 # set parameters ################################
 perspective = 2000
@@ -32,9 +34,11 @@ animOptions = {
 # call the function ################################
 swipeFlip.swipeFlip(layer, perspective, drag, animOptions)
 ```
+
 ## Meanings of parameters
-Make sure to plan ahead what you need to show in your prototype. My workflow is:
-The swipeFlip function has 4 parameters, they are all necessary
+
+The swipeFlip function has 4 parameters, they are all necessary:
+
 - **layer:** The layer you want to creat flip effect.
 
 - **perspective:** see [docs for reference](http://framerjs.com/docs/#layer.perspective)
@@ -44,5 +48,6 @@ The swipeFlip function has 4 parameters, they are all necessary
 - **animOptions:** This parameter manage how the layer will be animated when you loosen your finger.
 
 ## References
+
 This module is refer to [framer-flip-card-module](https://github.com/aboutjax/framer-flip-card-module) by aboutjax.
 
