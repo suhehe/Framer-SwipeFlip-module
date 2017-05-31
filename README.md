@@ -31,8 +31,9 @@ animOptions = {
   cure: Bezier.ease,
   time: 0.2
 }
+horizontal = true
 # call the function ################################
-swipeFlip.swipeFlip(layer, perspective, drag, animOptions)
+swipeFlip.swipeFlip(layer, perspective, drag, animOptions, horizontal)
 ```
 
 ## Meanings of parameters
@@ -46,6 +47,8 @@ The swipeFlip function has 4 parameters, they are all necessary:
 - **drag:** This parameter is about sensitivity, recommended range is from 0.5 to 1.5. You can try finding a fitted value.
 
 - **animOptions:** This parameter manage how the layer will be animated when you loosen your finger.
+
+- **horizontal:** Rotation direction.
 
 ## References
 
