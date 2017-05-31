@@ -48,7 +48,7 @@ The swipeFlip function has 4 parameters, they are all necessary:
 
 - **animOptions:** This parameter manage how the layer will be animated when you loosen your finger.
 
-- **horizontal:** Rotation direction.
+- **horizontal:** Rotation direction. Default value is true.
 
 ## References
 
