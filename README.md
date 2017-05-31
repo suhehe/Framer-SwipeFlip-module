@@ -38,7 +38,7 @@ swipeFlip.swipeFlip(layer, perspective, drag, animOptions, horizontal)
 
 ## Meanings of parameters
 
-The swipeFlip function has 4 parameters, they are all necessary:
+The swipeFlip function has 5 parameters, they are all necessary except horizontal:
 
 - **layer:** The layer you want to creat flip effect.
 
