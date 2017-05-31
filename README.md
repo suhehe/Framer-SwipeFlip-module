@@ -36,6 +36,12 @@ horizontal = true
 swipeFlip.swipeFlip(layer, perspective, drag, animOptions, horizontal)
 ```
 
+5 - SwipeFlip will creat two child layer: "font" and "back", correspond to font side and back side of the parent layer.
+```coffeescript
+layer.font.backgroundColor = "red"
+layer.back.backgroundColor = "blue"
+```
+
 ## Meanings of parameters
 
 The swipeFlip function has 5 parameters, they are all necessary except horizontal:
