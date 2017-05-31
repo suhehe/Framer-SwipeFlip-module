@@ -9,7 +9,7 @@ A Framer module to create flip effect by listening in the swipe event
 
 2 - Import the module.
 ```coffeescript
-swipeFlip = require "swipeFlip"
+sf = require "swipeFlip"
 ```
 
 3 - Create a new Layer.
@@ -33,7 +33,7 @@ animOptions = {
 }
 horizontal = true
 # call the function ################################
-swipeFlip.swipeFlip(layer, perspective, drag, animOptions, horizontal)
+sf.swipeFlip(layer, perspective, drag, animOptions, horizontal)
 ```
 
 5 - SwipeFlip will creat two child layer: "font" and "back", correspond to font side and back side of the parent layer.
