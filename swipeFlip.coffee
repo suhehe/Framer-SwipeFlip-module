@@ -2,12 +2,18 @@ exports.swipe = (event, layer) ->
 exports.swipeStart = (event, layer) ->
 exports.swipeEnd = (event, layer) ->
 
-exports.swipeFlip = (layer, perspective, drag, animationOptions) ->
+exports.swipeFlip = (layer, perspective, drag, animationOptions, horizontal = true) ->
     # Variable ###########################################
-    rotationY_start = 0
+    rotation_start = 0
     layer.perspective = perspective
     layer.isfront = true
     layer.disable = false
+
+    print horizontal
+    if horizontal
+        rotat = "rotationY"
+    else
+        rotat = "rotationX"
 
     layer.container = new Layer
         parent: layer, name: "container"
@@ -30,7 +36,7 @@ exports.swipeFlip = (layer, perspective, drag, animationOptions) ->
     back = container.back
     front = container.front
 
-    back.rotationY = 180
+    back[rotat] = 180
     container.animationOptions = animationOptions
 
     # Events ###########################################
@@ -52,44 +58,48 @@ exports.swipeFlip = (layer, perspective, drag, animationOptions) ->
 
     # Function ###########################################
     swipe = () ->
-        range = [-container.width * drag, container.width * drag]
-        t = Utils.modulate(event.point.x - event.start.x, range, [-180, 180], true)
-        container.rotationY = t + rotationY_start
+        if horizontal
+            range = [-container.width * drag, container.width * drag]
+            t = Utils.modulate(event.point.x - event.start.x, range, [-180, 180], true)
+        else
+            range = [-container.height * drag, container.height * drag]
+            t = Utils.modulate(event.point.y - event.start.y, range, [-180, 180], true)
+        container[rotat] = t + rotation_start
 
     swipeEnd = () ->
-        if container.rotationY > 360
-            container.rotationY -= 360
-        if container.rotationY < -360
-            container.rotationY += 360
-        if (container.rotationY >= 0 && container.rotationY < 90)
+        if container[rotat] > 360
+            container[rotat] -= 360
+        if container[rotat] < -360
+            container[rotat] += 360
+        if (container[rotat] >= 0 && container[rotat] < 90)
             layer.isfront = true
-            setRotation(0)
-        else if (container.rotationY >= 90 && container.rotationY < 180)
+            container.setRotation(0)
+        else if (container[rotat] >= 90 && container[rotat] < 180)
             layer.isfront = false
-            setRotation(180)
-        else if (container.rotationY >= 180 && container.rotationY < 270)
+            container.setRotation(180)
+        else if (container[rotat] >= 180 && container[rotat] < 270)
             layer.isfront = false
-            setRotation(180)
-        else if (container.rotationY >= 270 && container.rotationY < 360)
+            container.setRotation(180)
+        else if (container[rotat] >= 270 && container[rotat] < 360)
             layer.isfront = true
-            setRotation(360)
-        else if (container.rotationY < 0 && container.rotationY > -90)
+            container.setRotation(360)
+        else if (container[rotat] < 0 && container[rotat] > -90)
             layer.isfront = true
-            setRotation(0)
-        else if (container.rotationY <= -90 && container.rotationY > -180)
+            container.setRotation(0)
+        else if (container[rotat] <= -90 && container[rotat] > -180)
             layer.isfront = false
-            setRotation(-180)
-        else if (container.rotationY <= -180 && container.rotationY > -270)
+            container.setRotation(-180)
+        else if (container[rotat] <= -180 && container[rotat] > -270)
             layer.isfront = false
-            setRotation(-180)
-        # else if (container.rotationY <= -270 && container.rotationY > -360)
+            container.setRotation(-180)
+        # else if (container[rotat] <= -270 && container[rotat] > -360)
         else
             layer.isfront = true
-            setRotation(-360)
+            container.setRotation(-360)
 
     swipeStart = () ->
-        rotationY_start = container.rotationY
+        rotation_start = container[rotat]
 
-    setRotation = (angle) ->
+    container.setRotation = (angle) ->
         container.animate
             rotationY: angle
