@@ -9,7 +9,6 @@ exports.swipeFlip = (layer, perspective, drag, animationOptions, horizontal = tr
     layer.isfront = true
     layer.disable = false
 
-    print horizontal
     if horizontal
         rotat = "rotationY"
     else
