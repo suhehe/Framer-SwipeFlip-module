@@ -61,8 +61,10 @@ You can rewrite these three function below for your needs, as follows:
 ```coffeescript
 sf.swipeStart = (event, layer) ->
    print "swipe start"
+
 sf.swipe = (event, layer) ->
    print "swiping"
+
 sf.swipeEnd = (event, layer) ->
    print "swipe end"
 ```
