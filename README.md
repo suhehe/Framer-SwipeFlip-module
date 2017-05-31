@@ -14,7 +14,7 @@ sf = require "swipeFlip"
 
 3 - Create a new Layer.
 ```coffeescript
-layer = new Layer
+myLayer = new Layer
   width: 400
   height: 300
   x: Align.center()
@@ -33,13 +33,13 @@ animOptions = {
 }
 horizontal = true
 # call the function ################################
-sf.swipeFlip(layer, perspective, drag, animOptions, horizontal)
+sf.swipeFlip(myLayer, perspective, drag, animOptions, horizontal)
 ```
 
 5 - SwipeFlip will creat two child layer: "font" and "back", correspond to font side and back side of the parent layer.
 ```coffeescript
-layer.font.backgroundColor = "red"
-layer.back.backgroundColor = "blue"
+myLayer.font.backgroundColor = "red"
+myLayer.back.backgroundColor = "blue"
 ```
 
 ## Meanings of parameters
