@@ -56,6 +56,17 @@ The swipeFlip function has 5 parameters, they are all necessary except horizonta
 
 - **horizontal:** Rotation direction. Default value is true.
 
+## What's more
+You can rewrite these three function below for your needs, as follows:
+```coffeescript
+sf.swipeStart = (event, layer) ->
+   print "swipe start"
+sf.swipe = (event, layer) ->
+   print "swiping"
+sf.swipeEnd = (event, layer) ->
+   print "swipe end"
+```
+
 ## References
 
 This module is refer to [framer-flip-card-module](https://github.com/aboutjax/framer-flip-card-module) by aboutjax.
