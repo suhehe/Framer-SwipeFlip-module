@@ -68,6 +68,14 @@ sf.swipe = (event, layer) ->
 sf.swipeEnd = (event, layer) ->
    print "swipe end"
 ```
+Check if the layer is font, return true or false:
+```coffeescript
+print myLayer.isfont
+```
+Sets whether the layer can be fliped:
+```coffeescript
+myLayer.disable = true
+```
 
 ## References
 
