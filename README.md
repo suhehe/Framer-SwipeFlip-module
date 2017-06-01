@@ -42,6 +42,11 @@ myLayer.container.front.backgroundColor = "red"
 myLayer.container.back.backgroundColor = "blue"
 ```
 
+You can check out the demo <a href="https://framer.cloud/sshrf/">here</a>
+
+<a href="https://framer.cloud/sshrf/"><img alt="swipeFlip_demo" src="https://framer.cloud/sshrf/framer/social-800x600.png?version=2" height="225px" /></a>
+
+
 ## Meanings of parameters
 
 The swipeFlip function has 5 parameters, they are all necessary except horizontal:
