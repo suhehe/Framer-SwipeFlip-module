@@ -36,10 +36,10 @@ horizontal = true
 sf.swipeFlip(myLayer, perspective, drag, animOptions, horizontal)
 ```
 
-5 - SwipeFlip will creat two child layer: "font" and "back", correspond to font side and back side of the parent layer.
+5 - SwipeFlip will creat two child layer: "front" and "back", correspond to front side and back side of the parent layer.
 ```coffeescript
-myLayer.font.backgroundColor = "red"
-myLayer.back.backgroundColor = "blue"
+myLayer.container.front.backgroundColor = "red"
+myLayer.container.back.backgroundColor = "blue"
 ```
 
 ## Meanings of parameters
@@ -68,9 +68,10 @@ sf.swipe = (event, layer) ->
 sf.swipeEnd = (event, layer) ->
    print "swipe end"
 ```
-Check if the layer is font, return true or false:
+Check if the layer is front, return true or false:
 ```coffeescript
-print myLayer.isfont
+if myLayer.isfront
+   print "Is front!"
 ```
 Sets whether the layer can be fliped:
 ```coffeescript
