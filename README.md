@@ -2,6 +2,8 @@
 
 A Framer module to create flip effect using swipe gestures
 
+You can check out the demo <a href="https://framer.cloud/sshrf/">here</a>
+
 ## How to use
 
 1 - Download swipeFlip.coffee and put it in your modules folder.
@@ -41,7 +43,7 @@ myLayer.container.front.backgroundColor = "red"
 myLayer.container.back.backgroundColor = "blue"
 ```
 
-You can check out the demo <a href="https://framer.cloud/sshrf/">here</a>
+<a href="https://framer.cloud/sshrf/">Demo</a>
 
 <a href="https://framer.cloud/sshrf/"><img alt="swipeFlip_demo" src="https://framer.cloud/sshrf/framer/social-800x600.png?version=2" height="225px" /></a>
 
