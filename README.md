@@ -40,11 +40,13 @@ sf.swipeFlip(myLayer, perspective, drag, animOptions, horizontal)
 5 - SwipeFlip will create two child layer: "front" and "back", correspond to front side and back side of the parent layer.
 ```coffeescript
 myLayer.container.front.backgroundColor = "red"
+myLayer.container.front.borderRadius = 20
+
 myLayer.container.back.backgroundColor = "blue"
+myLayer.container.back.borderRadius = 20
 ```
 
-<a href="https://framer.cloud/sshrf/">Demo</a>
-
+With those steps complete, this is the result
 <a href="https://framer.cloud/sshrf/"><img alt="swipeFlip_demo" src="https://github.com/suhehe/suhehe.github.io/blob/master/images/demo.gif" height="225px" /></a>
 
 
