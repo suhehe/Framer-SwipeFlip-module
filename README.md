@@ -45,7 +45,7 @@ myLayer.container.back.backgroundColor = "blue"
 
 <a href="https://framer.cloud/sshrf/">Demo</a>
 
-<a href="https://framer.cloud/sshrf/"><img alt="swipeFlip_demo" src="https://framer.cloud/sshrf/framer/social-800x600.png?version=2" height="225px" /></a>
+<a href="https://framer.cloud/sshrf/"><img alt="swipeFlip_demo" src="https://github.com/suhehe/suhehe.github.io/blob/master/images/demo.gif" height="225px" /></a>
 
 
 ## Meanings of parameters
