@@ -46,7 +46,8 @@ myLayer.container.back.backgroundColor = "blue"
 myLayer.container.back.borderRadius = 20
 ```
 
-With those steps complete, this is the result
+With those steps complete, this is the result:
+
 <a href="https://framer.cloud/sshrf/"><img alt="swipeFlip_demo" src="https://github.com/suhehe/suhehe.github.io/blob/master/images/demo.gif" height="225px" /></a>
 
 
