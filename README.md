@@ -1,7 +1,6 @@
 # Framer-SwipeFlip-module
 
-A Framer module to create flip effect by listening in the swipe event
-
+A Framer module to create flip effect using swipe gestures
 
 ## How to use
 
@@ -36,7 +35,7 @@ horizontal = true
 sf.swipeFlip(myLayer, perspective, drag, animOptions, horizontal)
 ```
 
-5 - SwipeFlip will creat two child layer: "front" and "back", correspond to front side and back side of the parent layer.
+5 - SwipeFlip will create two child layer: "front" and "back", correspond to front side and back side of the parent layer.
 ```coffeescript
 myLayer.container.front.backgroundColor = "red"
 myLayer.container.back.backgroundColor = "blue"
