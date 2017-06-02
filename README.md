@@ -1,6 +1,6 @@
 # Framer-SwipeFlip-module
 
-A Framer module to create flip effect using swipe gestures
+A Framer module to create flip effect using swipe gestures.
 
 You can check out the demo <a href="https://framer.cloud/sshrf/">here</a>
 
