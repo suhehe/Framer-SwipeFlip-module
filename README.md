@@ -61,9 +61,9 @@ The swipeFlip function has 6 parameters, The first four are necessary, and the l
 
 - **animOptions:** This parameter manage how the layer will be animated when you loosen your finger.
 
-- **vertical:** Sets whether the layer flipped vertically. This parameter is not necessary, default value is false.
+- **vertical:** Sets whether the layer is flipped vertically. This parameter is not necessary, default value is false.
 
-- **tap:** Sets whether the layer flipped using tap gestures. This parameter is not necessary, default value is false.
+- **tap:** Sets whether the layer is flipped using tap gestures. This parameter is not necessary, default value is false.
 
 ## What's more
 You can rewrite these three function below for your needs, as follows:
