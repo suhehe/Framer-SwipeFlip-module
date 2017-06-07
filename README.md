@@ -32,28 +32,26 @@ animOptions = {
   cure: Bezier.ease,
   time: 0.2
 }
-horizontal = true
+
 # call the function ################################
-sf.swipeFlip(myLayer, perspective, drag, animOptions, horizontal)
+sf.swipeFlip(myLayer, perspective, drag, animOptions)
 ```
 
 5 - SwipeFlip will create two child layer: "front" and "back", correspond to front side and back side of the parent layer.
 ```coffeescript
 myLayer.container.front.backgroundColor = "red"
-myLayer.container.front.borderRadius = 20
 
 myLayer.container.back.backgroundColor = "blue"
-myLayer.container.back.borderRadius = 20
 ```
 
-With those steps complete, this is the result:
+With those steps complete, the result is almost like this:
 
 <a href="https://framer.cloud/sshrf/"><img alt="swipeFlip_demo" src="https://github.com/suhehe/suhehe.github.io/blob/master/images/demo.gif" height="225px" /></a>
 
 
 ## Meanings of parameters
 
-The swipeFlip function has 5 parameters, they are all necessary except horizontal:
+The swipeFlip function has 6 parameters, The first four are necessary, and the last two are not:
 
 - **layer:** The layer you want to creat flip effect.
 
@@ -63,7 +61,9 @@ The swipeFlip function has 5 parameters, they are all necessary except horizonta
 
 - **animOptions:** This parameter manage how the layer will be animated when you loosen your finger.
 
-- **horizontal:** Rotation direction. Default value is true.
+- **vertical:** Sets whether the layer flipped vertically. This parameter is not necessary, default value is false.
+
+- **tap:** Sets whether the layer flipped using tap gestures. This parameter is not necessary, default value is false.
 
 ## What's more
 You can rewrite these three function below for your needs, as follows:
@@ -84,7 +84,7 @@ if myLayer.isfront
 ```
 Sets whether the layer can be fliped:
 ```coffeescript
-myLayer.disable = true
+myLayer.sf_disable = true
 ```
 
 ## References
