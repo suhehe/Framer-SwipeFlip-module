@@ -29,7 +29,7 @@ myLayer = new Layer
 perspective = 2000
 drag = 0.8
 animOptions = {
-  cure: Bezier.ease,
+  curve: Bezier.ease,
   time: 0.2
 }
 
