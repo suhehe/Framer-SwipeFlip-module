@@ -49,7 +49,7 @@ With those steps complete, the result is almost like this:
 <a href="https://framer.cloud/sshrf/"><img alt="swipeFlip_demo" src="https://github.com/suhehe/suhehe.github.io/blob/master/images/demo.gif" height="225px" /></a>
 
 
-## Meanings of parameters
+## Parameters
 
 The swipeFlip function has 6 parameters, The first four are necessary, and the last two are not:
 
