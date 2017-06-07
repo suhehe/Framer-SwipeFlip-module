@@ -47,6 +47,8 @@ exports.swipeFlip = (layer, perspective, drag, animationOptions, vertical = fals
             exports.swipe(event, layer)
 
         container.on Events.SwipeStart, swipeStartHandler = (event, target) ->
+            if container.isAnimating
+                container.animateStop()
             exports.swipeStart(event, layer)
             if layer.sf_disable
                 return
@@ -62,13 +64,15 @@ exports.swipeFlip = (layer, perspective, drag, animationOptions, vertical = fals
         container.on Events.Tap, tapHandler = (event, target) ->
             if layer.sf_disable
                 return
-            rotation_start = container[rotat]
             Tap()
 
 
     # Function ###########################################
     Tap = () ->
-        container.setRotation(rotation_start + 180)
+        if layer.isfront
+            container.setRotation(180)
+        else
+            container.setRotation(0)
         layer.isfront = !layer.isfront
 
     swipe = () ->
