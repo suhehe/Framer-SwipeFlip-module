@@ -53,7 +53,7 @@ With those steps complete, the result is almost like this:
 
 The swipeFlip function has 6 parameters, The first four are necessary, and the last two are not:
 
-- **layer:** The layer you want to creat flip effect.
+- **layer:** The layer you want to create flip effect.
 
 - **perspective:** see [docs for reference](http://framerjs.com/docs/#layer.perspective)
 
