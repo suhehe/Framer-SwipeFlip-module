@@ -25,7 +25,7 @@ myLayer = new Layer
 
 4 - Call the swipeFlip function and set the parameters.
 ```coffeescript
-# set parameters ################################
+# Set parameters ################################
 perspective = 2000
 drag = 0.8
 animOptions = {
@@ -33,7 +33,7 @@ animOptions = {
   time: 0.2
 }
 
-# call the function ################################
+# Call the function ################################
 sf.swipeFlip(myLayer, perspective, drag, animOptions)
 ```
 
